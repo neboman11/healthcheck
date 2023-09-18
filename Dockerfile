@@ -13,4 +13,4 @@ RUN go build
 
 EXPOSE 8080
 
-CMD [ "/app/music-wishlist-api" ]
+CMD [ "/app/healthcheck" ]
