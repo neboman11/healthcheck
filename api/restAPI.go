@@ -3,13 +3,10 @@ package api
 import (
 	"fmt"
 	"net/http"
-	"sync"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
-
-var makingRequest sync.Mutex
 
 // Starts listening for requests on the given port
 func HandleRequests(port int) {
