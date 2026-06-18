@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.26.0-alpine3.22
+FROM golang:1.26-alpine3.22
 
 WORKDIR /app
-COPY go.mod ./
+COPY gom.mod ./
 COPY go.sum ./
 RUN go mod download
 
